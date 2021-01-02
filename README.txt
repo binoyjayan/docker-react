@@ -58,14 +58,14 @@ Travis-CI Settings
 
 Debug AWS deployment failures
 ------------------------------------------------------------
- - Upgrade t2.micro to to t2.small instance
  - Use destination folder for docker COPY command to look like './' instead of '.'
  - Recreate the Elastic Beanstalk environment with 'Docker running on 64bit Amazon Linux'
+ - Upgrade t2.micro to to t2.small instance
 
 
 Expose ports for deployment
 ------------------------------------------------------------
-Add line 'ESPOSE 80' in Dockerfile
+Add line 'EXPOSE 80' in Dockerfile
 
 Reference
 ------------------------------------------------------------
