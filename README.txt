@@ -55,6 +55,13 @@ Travis-CI Settings
  - Add AWS_ACCESS_KEY and AWS_SECRET_KEY ] and do not enable display in build log
  - Add access_key_id and secret_access_key to .travis.yml
 
+
+Debug AWS deployment failures
+------------------------------------------------------------
+ - Upgrade t2.micro to to t2.small instance
+ - Use destination folder for docker COPY command to look like './' instead of '.'
+
+
 Expose ports for deployment
 ------------------------------------------------------------
 Add line 'ESPOSE 80' in Dockerfile
