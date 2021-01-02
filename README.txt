@@ -33,10 +33,31 @@ Prepare for deployment
 ------------------------------------------------------------
 Add docker-react to github
 Link repo to the travis account
-Add travis.yml file
+Add .travis.yml file (note the dot[.] in the file name)
+
+Elastic Beanstalk environment
+------------------------------------------------------------
+Select 'Docker running on 64bit Amazon Linux'
+
+IAM setup
+------------------------------------------------------------
+Add the following user in 'IAM' service provided by AWS.
+ - 'docker-react-travis-ci'
+ - Enable 'Programmatic access'
+ - Do not enable AWS Management Console Access
+ - Attach existing polcies directly - 'AWSElasticBeanstalkFullAccess'
+ - Click 'Create User' to complete the process
+ - Note down AWS_ACCESS_KEY and AWS_SECRET_KEY
+
+Travis-CI Settings
+ - Navigate to Settings -> 'More options' -> Environment Variables
+ - Add AWS_ACCESS_KEY and AWS_SECRET_KEY ] and do not enable display in build log
+ - Add access_key_id and secret_access_key to .travis.yml
+
 
 Reference
 ------------------------------------------------------------
 https://docs.docker.com/engine/reference/run/#env-environment-variables
+https://docs.travis-ci.com/user/migrate/open-source-repository-migration#migrating-a-repository
 
 
