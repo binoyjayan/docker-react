@@ -21,7 +21,7 @@ docker build .
 
 Run nginx based container
 ------------------------------------------------------------
-docker run -p 8080:80 2f6d6be65150
+docker run -p 80:80 2f6d6be65150
 
 Build and run development docker
 ------------------------------------------------------------
@@ -60,6 +60,7 @@ Debug AWS deployment failures
 ------------------------------------------------------------
  - Upgrade t2.micro to to t2.small instance
  - Use destination folder for docker COPY command to look like './' instead of '.'
+ - Recreate the Elastic Beanstalk environment with 'Docker running on 64bit Amazon Linux'
 
 
 Expose ports for deployment
