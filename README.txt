@@ -31,7 +31,7 @@ docker run -it 18988e2c38be  npm run test -- --coverage    # Returns after test
 
 Prepare for deployment
 ------------------------------------------------------------
-Add docker-react to github
+Add docker-react as a repo to github
 Link repo to the travis account
 Add .travis.yml file (note the dot[.] in the file name)
 
@@ -42,7 +42,7 @@ Select 'Docker running on 64bit Amazon Linux'
 IAM setup
 ------------------------------------------------------------
 Add the following user in 'IAM' service provided by AWS.
- - 'docker-react-travis-ci'
+ - 'docker1-travis-ci'
  - Enable 'Programmatic access'
  - Do not enable AWS Management Console Access
  - Attach existing polcies directly - 'AWSElasticBeanstalkFullAccess'
