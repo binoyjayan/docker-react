@@ -67,10 +67,16 @@ Expose ports for deployment
 ------------------------------------------------------------
 Add line 'EXPOSE 80' in Dockerfile
 
+Environment cleanup
+------------------------------------------------------------
+ - Goto Elastic Beanstalk dashboard
+ - Click Applications
+ - Click delete Application
+
 Reference
 ------------------------------------------------------------
 https://docs.docker.com/engine/reference/run/#env-environment-variables
 https://docs.travis-ci.com/user/migrate/open-source-repository-migration#migrating-a-repository
 http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.html
-
+https://console.aws.amazon.com/billing/home?region=us-west-1#/
 
