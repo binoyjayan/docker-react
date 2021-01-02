@@ -50,10 +50,14 @@ Add the following user in 'IAM' service provided by AWS.
  - Note down AWS_ACCESS_KEY and AWS_SECRET_KEY
 
 Travis-CI Settings
+------------------------------------------------------------
  - Navigate to Settings -> 'More options' -> Environment Variables
  - Add AWS_ACCESS_KEY and AWS_SECRET_KEY ] and do not enable display in build log
  - Add access_key_id and secret_access_key to .travis.yml
 
+Expose ports for deployment
+------------------------------------------------------------
+Add line 'ESPOSE 80' in Dockerfile
 
 Reference
 ------------------------------------------------------------
